@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+#app {
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+h1 {
+    color: #2f3640;
+    margin-bottom: 30px;
+}
+
+#input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#input-container div {
+    flex: 1;
+    padding: 0 5px;
+}
+
+input {
+    border: 2px solid #2f3640;
+    border-radius: 5px;
+    height: 30px;
+    width: 120px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#start-btn {
+    background-color: #ffffff;
+    color: #2f3640;
+    border: 2px solid #2f3640;
+}
+
+#start-btn:hover {
+    background-color: #576574;
+}
+
+#reset-btn {
+    background-color: #ffffff;
+    color: #2f3640;
+    border: 2px solid #2f3640;
+}
+
+#reset-btn:hover {
+    background-color: #576574;
+}
+
+#timer-display {
+    color: #2f3640;
+    font-size: 2em;
+    margin-top: 20px;
+    border: 2px solid #2f3640;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.theme-default {
+    background-color: #f8f8f8;
+    color: #000;
+}
+
+.theme-default #app {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.theme-dark {
+    background-color: #383738;
+    color: #fff;
+}
+
+.theme-dark #app, .theme-dark #timer-display {
+    background-color: #111;
+    color: #fff;
+    box-shadow: 0px 0px 10px 2px #555;
+}
+
+.theme-dark h1 {
+    color: #fff;
+}
+
+.theme-dark #start-btn {
+    background-color: #5c5c5c;
+    color: white;
+    border: 2px solid #fff;
+}
+
+.theme-dark #start-btn:hover {
+    background-color: #000;
+}
+
+.theme-dark #reset-btn {
+    background-color: #5c5c5c;
+    color: white;
+    border: 2px solid #fff;
+}
+
+.theme-dark #reset-btn:hover {
+    background-color: #000;
+}
